@@ -103,7 +103,7 @@ showImage = function(direction) {
         },
         {   img:"img/carolinaswc.png", 
             title:"Carolina Sexual Wellness Center", 
-            desc:"A website for Psychologies Dr. Krista Nabar using WordPress",
+            desc:"A website for Psychologiest Dr. Krista Nabar using WordPress",
             details:"https://carolinaswc.org/",
             code:""
         },
