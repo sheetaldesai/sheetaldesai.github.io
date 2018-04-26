@@ -205,8 +205,8 @@ article {
 }
 
 .company {
-    width: 25%;
-    max-height: 150px;
+    /* width: 25%;
+    max-height: 150px; */
     background: white;
     text-align: center;
     padding: 2rem;

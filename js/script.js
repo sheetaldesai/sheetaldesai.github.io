@@ -17,6 +17,7 @@ $(document).ready(function(){
     // Closes responsive menu when a scroll trigger link is clicked
     $('#sidebar-wrapper .js-scroll-trigger').click(function() {
         $("#sidebar-wrapper").toggle();
+        $(".menu-toggle i").toggleClass('fa fa-bars fa fa-times');
         //$(this).find('svg').toggleClass('fa fa-bars fa fa-times');
     });
     
