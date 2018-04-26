@@ -4,11 +4,11 @@ $(document).ready(function(){
     $("#sidebar-wrapper").hide();
 
     $(window).scroll(function(){
-        console.log("window is scrolling");
+        //console.log("window is scrolling");
     })
     /* Show or hide the side nav bar when hamburger menu button is clicked.*/
     $(".menu-toggle").click(function() {
-        console.log("show hide nav");
+        //console.log("show hide nav");
         $("#sidebar-wrapper").toggle();
         $(this).find('svg').toggleClass('fa fa-bars fa fa-times');
         return false;
@@ -46,7 +46,7 @@ $(document).ready(function(){
     var captionText = $("#caption");
     $('#rsa img').on('click', function(){
          var el = $(this);
-        console.log("image clicked: ", el);
+        //console.log("image clicked: ", el);
         $("#myModal").show();
         $("#img01").attr("src", el.attr("src")); 
         captionText.innerHTML = el.alt;
@@ -76,9 +76,9 @@ function drawGraph() {
         )
         var last = $('.barHolder').last();
        
-        console.log("Width: ", last.width());
+        // console.log("Width: ", last.width());
         
-        console.log("NetWidth: ", value+'%');
+        // console.log("NetWidth: ", value+'%');
         last.append(
             $('<div/>').addClass('bar').width(value+"%").append(
                 $('<div>').addClass('skillName').text(key)
@@ -111,12 +111,12 @@ showImage = function(direction) {
     ]
 
     var content, index;
-    console.log("direction: ", direction);
+    // console.log("direction: ", direction);
     if (direction == "first") {
         index = 0;
     } else {
         index = $("div.carousal").data("ind");
-        console.log("index ", index);
+        // console.log("index ", index);
         if (direction == 'prev') {
             if (index == 0 ) {
                 index = carousel.length - 1;
@@ -132,13 +132,13 @@ showImage = function(direction) {
         }
     }
     content = carousel[index];
-    console.log("content: ", content);
+    // console.log("content: ", content);
 
     $('div.carousal').html(`<img src=${content.img} alt="">`);
     $('div.carousal').data("ind",index);
     $('div.projectInfo').html(`<h3>${content.title}</h3>
                                 <p>${content.desc}</p>`);
-    console.log("carousal: ", $('.carousal'));
+    // console.log("carousal: ", $('.carousal'));
 
     if (content.details == "") {
         $('.details').addClass('disabled'); 
