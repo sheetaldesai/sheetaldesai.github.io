@@ -8,6 +8,17 @@ h1 {
     color: #DC5C05;
 }
 
+.btn {
+    background-color: rgba(253,236,0, 0.7);
+    color: #403F45;
+}
+
+.btn:hover {
+    color:#EAEAEA;
+    background-color: #403F45;
+}
+  
+
 .show {
     display: inline-block;
 }
@@ -42,19 +53,11 @@ h1 {
     width: 50px;
     height: 50px;
     text-align: center;
-    color: #403F45;
-    background: rgba(253,236,0, 0.7);
     line-height: 50px;
     z-index: 999;
   }
   
-  .menu-toggle:focus, .menu-toggle:hover {
-    color: #fff;
-  }
   
-  .menu-toggle:hover {
-    background: #343a40;
-  }
 
   
 
@@ -120,7 +123,7 @@ h1 {
   .moreButton {
     width: 200px;
     height: 50px;
-    background-color: rgba(253,236,0, 0.7);
+   
     padding: 10px;
     border: 2px solid #403F45;
     /* outline: 5px solid red; */
@@ -244,7 +247,7 @@ article {
     align-self: center;
     padding: 10px;
     font-size: 4em;
-    color: black;
+    color: #403F45;
 }
 
 /* .arrowButton svg {
@@ -260,15 +263,15 @@ article {
     list-style-type: none;
 }
 
-.carouselButton {
+.details, .code {
     width: 100px;
     height: 35px;
-    background-color: rgba(253,236,0, 0.7);;
+    
     padding: 5px;
     border: 2px solid #403F45;
-    /* outline: 5px solid red; */
+    
     margin-bottom: 2rem;
-    color: #403F45;
+  
     margin-right: 30px;
     box-sizing: border-box;
 }
@@ -276,8 +279,6 @@ article {
 .projectInfo {
     padding: 15px;
 }
-
-
 
 .media {
     margin-top: 1%;
