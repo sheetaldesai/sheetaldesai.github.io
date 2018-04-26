@@ -17,9 +17,10 @@ $(document).ready(function(){
     // Closes responsive menu when a scroll trigger link is clicked
     $('#sidebar-wrapper .js-scroll-trigger').click(function() {
         $("#sidebar-wrapper").toggle();
-        $(".menu-toggle > .fa-bars, .menu-toggle > .fa-times").toggleClass("fa-bars fa-times");
+        //$(this).find('svg').toggleClass('fa fa-bars fa fa-times');
     });
     
+     
     /** Draw skills bar graphs */
     drawGraph();
 
