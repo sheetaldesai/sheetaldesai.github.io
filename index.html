@@ -31,16 +31,16 @@
                 <a class="js-scroll-trigger" href="#home">Home</a>
               </li>
               <li class="sidebar-nav-item">
-                <a class="js-scroll-trigger" href="#info">About</a>
+                <a class="js-scroll-trigger" href="#about">About</a>
               </li>
               <li class="sidebar-nav-item">
                 <a class="js-scroll-trigger" href="#skillsWrapper">Skills</a>
               </li>
               <li class="sidebar-nav-item">
-                <a class="js-scroll-trigger" href="#experience">Work Experience</a>
+                <a class="js-scroll-trigger" href="#experience">Work History</a>
               </li>
               <li class="sidebar-nav-item">
-                <a class="js-scroll-trigger" href="#projects">Portfolio</a>
+                <a class="js-scroll-trigger" href="#projects">Projects</a>
               </li>
               <li class="sidebar-nav-item">
                 <a class="js-scroll-trigger" href="https://docs.google.com/document/d/1NO7VLv0vrDswdNoDmXBOMlGLPVBa16u64WQiFp17WHk/edit?usp=sharing" target="_blank">Resume</a>
@@ -62,23 +62,25 @@
              <a class="btn lbutton moreButton" href="#info" role="button">Learn More</a>
         </div>
     </article>
-    <article id="info" >
-        <h1 class="title">About Me</h1>
-        <div class="header-bar justify-content-center"></div>
-        
-            <div class="center p-3">
-                <img src="img/sheetal.png" alt="">
-            </div>
-            <p class="p-3">
-                I am a full stack web developer with a focus on front end engineering. I am passionate about creating engaging user experiences enabled by pixel perfect designs.  I have over 13 years 
-                of industry experience creating a variety of user interfaces, ranging from consumer facing websites through B2B product UIs. 
-                
-                <br><br>I started my career doing Windows device driver kernel development using C. From there, I meandered into a variety of technologies including JavaScript, Sencha 
-                Ext. JS, .NET and C#.  Also, as a recent graduate of Coding Dojo  - Full stack web dev bootcamp, I have also gained proficiency in the MEAN stack (MongoDB-Express-Angular-Node), iOS/Swift 
-                and Python. Having worked with various technologies and domains, I have found my passion in front-end UI development, where I can combine my strong analytical and technical skills 
-                with my love for great user-centric design to create satisfying and productive UIs.
-                
-            </p>
+    <article id="about">
+        <div class="aboutWrapper">
+            <h1 class="title">About Me</h1>
+            <div class="header-bar justify-content-center"></div>
+            
+                <div class="center p-3">
+                    <img src="img/sheetal.png" alt="">
+                </div>
+                <p class="p-3">
+                    I am a full stack web developer with a focus on front end engineering. I am passionate about creating engaging user experiences enabled by pixel perfect designs.  I have over 13 years 
+                    of industry experience creating a variety of user interfaces, ranging from consumer facing websites through B2B product UIs. 
+                    
+                    <br><br>I started my career doing Windows device driver kernel development using C. From there, I meandered into a variety of technologies including JavaScript, Sencha 
+                    Ext. JS, .NET and C#.  Also, as a recent graduate of Coding Dojo  - Full stack web dev bootcamp, I have gained proficiency in the MEAN stack (MongoDB-Express-Angular-Node), iOS/Swift 
+                    and Python. Having worked with various technologies and domains, I have found my passion in front-end UI development, where I can combine my strong analytical and technical skills 
+                    with my love for great user-centric design to create satisfying and productive UIs.
+                    
+                </p>
+        </div>
      
     </article>
     <article id="experience" class="p-2">
@@ -92,12 +94,31 @@
             </div>
             <div class="job p-2">
                 <h3>RSA, EMC Dell</h3>
-                <p>Part of RSA Archer product which is a Governance, Risk and Compliance platform that allows the enterprises to build solutions
-                   for Policy, Risk, Compliance, Incident, Threat etc.
-                   I was a lead developer for Archer’s DataFeed Manager(DFM) which allows aggregating data in RSA Archer. I headed a team of 3 developers 
-                   and successfully delivered the first release for DFM UI. Apart from delivering high quality code, my other key responsibilities 
-                   involved collaborating with UX team to formalize wireframes, formulating API contacts for UI and managing and coordinating project 
-                   status with management.
+                <h4>Lead Front End Developer for DataFeed Manager, Archer</h4>
+                <p class="bold">Technologies used: Sencha ExtJS, HTML, CSS</p>
+                <p> DataFeed Manager allows the user to aggregate data into RSA Archer which is a 
+                    Governance, Risk and Compliance platform that allows the enterprises to build solutions
+                    for Policy, Risk, Compliance, Incident, Threat etc.
+                </p>
+                <p class="bold">Achievements and responsibilities: </p>
+                   <ul class="fa-ul">
+                        <li><i class="fa-li fa fa-star" aria-hidden="true"></i>
+                            Headed a team of 3 developers and successfully delivered the first release for DFM UI
+                        </li>
+                        <li><i class="fa-li fa fa-star" aria-hidden="true"></i>
+                            Responsible for complete software life-cycle from requirement gathering to deployment of Data Feed Manager UI.
+                        </li>
+                        <li><i class="fa-li fa fa-star" aria-hidden="true"></i>
+                            Facilitated scrum planning and delegating work across the team
+                        </li>
+                        <li><i class="fa-li fa fa-star" aria-hidden="true"></i>
+                            Served as main point of contact between different cross-functional teams (UX, backend, API, Solutions etc.) to communicate UI requirements, formalize wireframes and 
+                            formulate API contracts.
+                        </li>
+                        <li><i class="fa-li fa fa-star" aria-hidden="true"></i>
+                            Participated in product wide UI features planning team responsible for identifying and architecting common shareable components across different Archer features. 
+                        </li>
+                   </ul>
                 </p>
             </div>
         </section>
@@ -109,16 +130,25 @@
             </div>
             <div class="job p-2">
                 <h3>NetApp</h3>
-                <p>At NetApp, I single handedly delivered 4 releases of Data Ontap DSM GUI, starting with the very first release 
-                    where I completely re-wrote the GUI using C#, .NET. The GUI allows the end user to administer and maintain multiple 
-                    data paths between a Windows client and a NetApp storage LUNs and was built as a snap-in extension to the Windows 
-                    Media Services MMC. In the later releases, I orchestrated various performance and feature enhancements incorporating 
-                    user and support team’s feedback. In addition to the design and development of the GUI, I provided customer support 
-                    by resolving complex high priority field issues in timely manner. During my tenure at NetApp, 
-                    I also managed vendor relationship with QLogic and Emulex which involved understanding their roadmaps for 
-                    new host bus adapter cards and helping the team to prioritize qualification efforts,
-                    understanding new features/bug fixes in their software releases and guiding QA with test strategy. 
-                </p>
+                <h4>Lead developer for Data Ontap DSM Graphical User Interface</h4>
+                <p class="bold">Technologies used: C#, .NET, WinForms, MMC, PowerShell, C</p>
+                <p>The GUI for Ontap DSM driver, allows the end user to administer and maintain multiple data paths between a Windows client and a NetApp storage LUNs and was built as a snap-in extension to the Windows 
+                    Media Services MMC.</p>
+                <p class="bold">Achievements and responsibilities: </p>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-star" aria-hidden="true"></i>
+                    Single handedly delivered 4 releases of Data Ontap DSM GUI, starting with the very first release 
+                    where I completely re-wrote the GUI using C#, .NET
+                    </li>
+                    <li><i class="fa-li fa fa-star" aria-hidden="true"></i>
+                    Provided customer support by resolving complex high priority field issues in timely manner
+                    </li>
+                    <li><i class="fa-li fa fa-star" aria-hidden="true"></i>
+                    Managed host bus adapter (HBA) vendor relationship with QLogic and Emulex which involved understanding their roadmaps for 
+                    new HBA cards and helping the team to prioritize qualification efforts and also driving QA test strategy based on the
+                    features/bug fixes in their software releases. 
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="d-flex p-3">
@@ -129,12 +159,26 @@
             </div>
             <div class="job p-2">
                 <h3> EMC Dell</h3>
+                <h4> Lead Developer and SME for Clarrion Storage drivers</h4>
+                <p class="bold">Technologies used: Windows NT kernel programming, C</p>
                 <p>At EMC, I was a developer for MirroviewS and ThinProvisioning products which dealt with disaster recovery and efficient storage 
                     provisioning for EMC’s Clariion storage platform. The products were built as Windows NT kernel layered drivers and the 
-                    development was done using C. By the end of my tenure at EMC, I delivered 5 main releases and was considered a SME for 
-                    those products. I received prestigious awards multiple times for my contributions for release deliverables and also for resolving 
-                    customer issues.  My main responsibilities involved, design, development and testing of various features and enhancements, providing customer support and triaging issues outside of my product area.
+                    development was done using C. 
                 </p>
+                <p class="bold">Achievements and responsibilities: </p>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-star" aria-hidden="true"></i>
+                        Delivered new features and performance enhancements like changing Fracture log granularity and cookie-less promotion of secondary image amongst others 
+                        for MirrorView/S driver.
+                    </li>
+                    <li><i class="fa-li fa fa-star" aria-hidden="true"></i>
+                        Delivered  various features such as Non-Disruptive Upgrade support, Pool Consumption Notification, 
+                        Aliasing etc. for the Virtual Thin Provisioning driver.
+                    </li>
+                    <li><i class="fa-li fa fa-star" aria-hidden="true"></i>
+                        Led Customer support responsibilities providing timely resolution of incoming incidents and generating patch fixes.
+                    </li>
+
             </div>
         </section>
     </article>
@@ -176,8 +220,11 @@
         <h3>
             I am open to new job opportunities that challenge me as a developer and design enthusiast. 
         </h3>
-        <div id="email">Email me at sheetaldesai1@gmail.com</div>
+       
         <div class="d-flex flex-row justify-content-center media">
+            <a class="p-3" href="mailto:sheetaldesai1@gmail.com" target="_blank">
+                <i class="fa fa-envelope"></i>
+            </a>
             <a class="p-3" href="https://www.linkedin.com/in/sheetal-desai-a8616a6/" target="_blank">
                 <i class="fab fa-linkedin"></i>
             </a>

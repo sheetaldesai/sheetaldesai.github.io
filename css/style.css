@@ -2,6 +2,7 @@ body {
     color: #403F45;
     font-family: 'Lato', arial, sans-serif;
     font-size: 16px;
+    margin: 0;
 }
 
 h1 {
@@ -36,6 +37,9 @@ h1 {
     vertical-align: middle;
 }
 
+.bold {
+    font-weight: 700;
+}
 .header-bar {
     margin-left: auto;
     margin-right: auto;
@@ -147,15 +151,22 @@ article {
     margin: 20px 0;
     padding: 10px;
 }
-
-#info img {
-  height: 200px;
-  width: 200px; 
+.aboutWrapper {
+    max-width: 950px;
+    margin: auto;
+    padding: 5px;
+    border: 5px solid rgba(253,236,0, 0.7);
+    outline: 1px solid #403F45;
+    /* background-color: #EAEAEA; */
+}
+#about img {
+  height: 250px;
+  width: 250px; 
   border-radius: 50%;
   margin-bottom: 20px;
 } 
 
-#info p {
+#about p {
   text-align: justify;
 }
 
@@ -169,11 +180,13 @@ article {
 .barHolder {
     width:90%;
     height:30px;
+    display: flex;
+    justify-content: space-between;
     border-color:#403F45;
     border-style:solid;
     border-width:1px;
     border-radius: 5px;
-    display:inline-block;
+    /* display:inline-block; */
     margin-bottom: 20px;
     background-color: #EAEAEA;
 }
@@ -193,6 +206,11 @@ article {
     border-radius: 5px;
 }
 
+.percentile {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 
 #experience {
     background: #EAEAEA;
@@ -207,9 +225,9 @@ article {
 .company {
     /* width: 25%;
     max-height: 150px; */
-    background: white;
+    /* background: white; */
     text-align: center;
-    padding: 2rem;
+    /* padding: 2rem; */
     margin-right: 2rem;
     margin-top: 1.2em;
     border-radius: 10px;
@@ -224,11 +242,22 @@ article {
     width: 75%;
 }
 
-.job h3 {
-    padding: 10px;
+.job h3, h4 {
+     padding: 10px 0;
+     
     /*border-bottom: 3px solid rgba(253,236,0,1);*/
 }
 
+.job h3 {
+    color: #DC5C05;
+}
+.fa-ul {
+    margin: 15px;
+}
+.fa-ul .fa {
+    font-size: 10px;
+    color: #DC5C05;
+}
 .carousal-wrapper {
     text-align: center;
     margin: 20px 0;
